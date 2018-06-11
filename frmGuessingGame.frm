@@ -202,6 +202,8 @@ Attribute VB_Exposed = False
 Option Explicit
 Dim secretNumber As Integer
 Dim intGuess As Integer
+Dim intMin As Integer
+Dim intMax As Integer
 
 Private Sub cmdReturn_Click()
     'The user can return to the menu
@@ -210,28 +212,31 @@ End Sub
 
 Private Sub cmdStartGuessingGame_Click()
     
+    intMin = Val(txtMin.Text)
+    intMax = Val(txtMax.Text)
+    
     'The game is enabled when the user presses start
     txtNumberGuess.Enabled = True
     hsbNumberGuess.Enabled = True
     
     'The secret number is determined
-     secretNumber = Int(Rnd * txtMax.Text + txtMin.Text)
+     secretNumber = Int((intMax - intMin + 1) * Rnd + intMin)
 
     'If the user chooses to play again, the text box and scroll bar will be cleared
     txtNumberGuess.Text = ""
-    hsbNumberGuess.Value = txtMin.Text
+    hsbNumberGuess.Value = intMin
     lblHighLow.Caption = ""
     
     'The min can't be higher than the max
-    If txtMin.Text > txtMax.Text Then
+    If intMin > intMax Then
        txtNumberGuess.Enabled = False
        hsbNumberGuess.Enabled = False
        lblWarning.Caption = "Your maximum value must be higher than your minimum value."
     End If
 
     'The max and min will be set to the user's chosen values
-    hsbNumberGuess.Min = txtMin.Text
-    hsbNumberGuess.Max = txtMax.Text
+    hsbNumberGuess.Min = intMin
+    hsbNumberGuess.Max = intMax
 
 End Sub
 
