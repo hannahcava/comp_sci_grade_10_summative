@@ -223,9 +223,9 @@ Private Sub cmdStartGuessingGame_Click()
      secretNumber = Int((intMax - intMin + 1) * Rnd + intMin)
 
     'If the user chooses to play again, the text box and scroll bar will be cleared
-    txtNumberGuess.Text = ""
     hsbNumberGuess.Value = intMin
     lblHighLow.Caption = ""
+    txtNumberGuess.Text = ""
     
     'The min can't be higher than the max
     If intMin > intMax Then
