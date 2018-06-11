@@ -1,0 +1,3 @@
+frmMainForm = 125, 125, 1170, 547, C, 25, 25, 600, 484, C
+frmGuessingGame = 0, 0, 0, 0, C, 75, 75, 1003, 534, C
+frmComputerQuiz = 369, 61, 824, 520, , 47, 8, 699, 667, C
