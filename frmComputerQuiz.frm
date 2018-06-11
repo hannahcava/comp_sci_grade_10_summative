@@ -287,7 +287,6 @@ Begin VB.Form frmComputerQuiz
    Begin VB.Image imgExFive 
       Height          =   825
       Left            =   5280
-      Picture         =   "frmComputerQuiz.frx":0000
       Stretch         =   -1  'True
       Top             =   5760
       Visible         =   0   'False
@@ -296,7 +295,6 @@ Begin VB.Form frmComputerQuiz
    Begin VB.Image ImgExFour 
       Height          =   825
       Left            =   5280
-      Picture         =   "frmComputerQuiz.frx":099C
       Stretch         =   -1  'True
       Top             =   4440
       Visible         =   0   'False
@@ -305,7 +303,6 @@ Begin VB.Form frmComputerQuiz
    Begin VB.Image imgExThree 
       Height          =   825
       Left            =   5280
-      Picture         =   "frmComputerQuiz.frx":1338
       Stretch         =   -1  'True
       Top             =   3360
       Visible         =   0   'False
@@ -314,7 +311,6 @@ Begin VB.Form frmComputerQuiz
    Begin VB.Image imgExTwo 
       Height          =   825
       Left            =   5280
-      Picture         =   "frmComputerQuiz.frx":1CD4
       Stretch         =   -1  'True
       Top             =   2280
       Visible         =   0   'False
@@ -323,7 +319,6 @@ Begin VB.Form frmComputerQuiz
    Begin VB.Image imgExOne 
       Height          =   825
       Left            =   5280
-      Picture         =   "frmComputerQuiz.frx":2670
       Stretch         =   -1  'True
       Top             =   1200
       Visible         =   0   'False
@@ -332,7 +327,6 @@ Begin VB.Form frmComputerQuiz
    Begin VB.Image imgCheckFive 
       Height          =   855
       Left            =   5280
-      Picture         =   "frmComputerQuiz.frx":300C
       Stretch         =   -1  'True
       Top             =   5760
       Visible         =   0   'False
@@ -341,7 +335,6 @@ Begin VB.Form frmComputerQuiz
    Begin VB.Image imgCheckFour 
       Height          =   855
       Left            =   5280
-      Picture         =   "frmComputerQuiz.frx":37A1
       Stretch         =   -1  'True
       Top             =   4440
       Visible         =   0   'False
@@ -350,7 +343,6 @@ Begin VB.Form frmComputerQuiz
    Begin VB.Image imgCheckThree 
       Height          =   855
       Left            =   5280
-      Picture         =   "frmComputerQuiz.frx":3F36
       Stretch         =   -1  'True
       Top             =   3360
       Visible         =   0   'False
@@ -359,7 +351,6 @@ Begin VB.Form frmComputerQuiz
    Begin VB.Image imgCheckOne 
       Height          =   855
       Left            =   5280
-      Picture         =   "frmComputerQuiz.frx":46CB
       Stretch         =   -1  'True
       Top             =   1200
       Visible         =   0   'False
@@ -368,7 +359,6 @@ Begin VB.Form frmComputerQuiz
    Begin VB.Image imgCheckTwo 
       Height          =   855
       Left            =   5280
-      Picture         =   "frmComputerQuiz.frx":4E60
       Stretch         =   -1  'True
       Top             =   2280
       Visible         =   0   'False
@@ -493,20 +483,20 @@ Dim score As Integer
 
 Private Sub cmdClear_Click()
     
-    'All option uttons will be deselected
+    'All option buttons will be deselected
     optTrueOne.Value = False
     optTrueOne.Value = False
     optFalseOne.Value = False
     optTrueTwo.Value = False
     optFalseTwo.Value = False
-    optTrueThree.Value = False
+    optTrueThree.Va
     optFalseThree.Value = False
     optTrueFour.Value = False
     optFalseFour.Value = False
     optTrueFive.Value = False
     optFalseFive.Value = False
     
-    'The right and wrong pictures will dissapear
+    'The right andlue = False wrong pictures will dissapear
     imgCheckOne.Visible = False
     imgCheckTwo.Visible = False
     imgCheckThree.Visible = False
