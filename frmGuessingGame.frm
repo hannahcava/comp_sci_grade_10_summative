@@ -279,15 +279,18 @@ End Sub
 
 Private Sub txtNumberGuess_Change()
     
+    'The text box input is defined as a variable
     intGuess = Val(txtNumberGuess.Text)
     
-    'The scroll bar will change with the text box input
-    If txtNumberGuess.Text = "" Then
-        hsbNumberGuess.Value = 0
-    ElseIf txtNumberGuess.Text <> "" Then
-        hsbNumberGuess.Value = txtNumberGuess.Text
+    'If the text box input is invald, it's probably because the user hasn't
+    'finished typing yet, so we don't want the scroll bar to glitch
+    If intGuess > intMax Or intGuess < intMin Or txtNumberGuess.Text = "" Then
+        Exit Sub
     End If
         
+    'The scroll bar's value will equal the text box's value
+    hsbNumberGuess.Value = intGuess
+    
     'The user's results will be displayed for them
     If intGuess > secretNumber Then
         lblHighLow.Caption = "Too High"
