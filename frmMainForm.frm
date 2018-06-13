@@ -4,11 +4,28 @@ Begin VB.Form frmMainForm
    ClientHeight    =   4755
    ClientLeft      =   120
    ClientTop       =   465
-   ClientWidth     =   5625
+   ClientWidth     =   5895
    LinkTopic       =   "Form1"
    ScaleHeight     =   4755
-   ScaleWidth      =   5625
+   ScaleWidth      =   5895
    StartUpPosition =   3  'Windows Default
+   Begin VB.CommandButton cmdBinaryHexadecimal 
+      Caption         =   "Decimal Number Conversion"
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   12
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   735
+      Left            =   3720
+      TabIndex        =   5
+      Top             =   3120
+      Width           =   1935
+   End
    Begin VB.CommandButton cmdComputerDefinitions 
       Caption         =   "Computer Quiz"
       BeginProperty Font 
@@ -21,10 +38,10 @@ Begin VB.Form frmMainForm
          Strikethrough   =   0   'False
       EndProperty
       Height          =   735
-      Left            =   480
+      Left            =   240
       TabIndex        =   4
       Top             =   3120
-      Width           =   1455
+      Width           =   1815
    End
    Begin VB.CommandButton cmdGuessingGame 
       Caption         =   "Guessing Game"
@@ -38,10 +55,10 @@ Begin VB.Form frmMainForm
          Strikethrough   =   0   'False
       EndProperty
       Height          =   735
-      Left            =   480
+      Left            =   240
       TabIndex        =   3
       Top             =   2160
-      Width           =   1455
+      Width           =   1815
    End
    Begin VB.CommandButton cmdExit 
       Caption         =   "Exit"
@@ -73,7 +90,7 @@ Begin VB.Form frmMainForm
          Strikethrough   =   0   'False
       EndProperty
       Height          =   975
-      Left            =   600
+      Left            =   840
       TabIndex        =   1
       Top             =   840
       Width           =   4215
@@ -91,7 +108,7 @@ Begin VB.Form frmMainForm
          Strikethrough   =   0   'False
       EndProperty
       Height          =   495
-      Left            =   600
+      Left            =   840
       TabIndex        =   0
       Top             =   240
       Width           =   4215
@@ -103,6 +120,10 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
+
+Private Sub cmdBinaryHexadecimal_Click()
+    frmDecimalNumberConversion.Show vbModal
+End Sub
 
 Private Sub cmdComputerDefinitions_Click()
     'The computer definition game will load
@@ -118,3 +139,4 @@ Private Sub cmdGuessingGame_Click()
     'The guessing game is loaded
     frmGuessingGame.Show vbModal
 End Sub
+
