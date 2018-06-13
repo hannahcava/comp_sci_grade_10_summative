@@ -244,12 +244,12 @@ Private Sub cmdConvert_Click()
     intBinary = intDecimal
     For i = 1 To 8
        intRemainder = intBinary Mod 2
-       strBinaryOutput = strBinaryOutput + Str(intRemainder)
-       intHalf = intBinary / 2
-       intBinary = intHalf - intRemainder
+       strBinaryOutput = Str(intRemainder) + strBinaryOutput
+       intHalf = intBinary \ 2
+       intBinary = intHalf
     Next
     
-    txtBinary.Text = StrReverse(strBinaryOutput)
+    txtBinary.Text = strBinaryOutput
     
 End Sub
 
