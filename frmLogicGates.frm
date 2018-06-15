@@ -183,6 +183,7 @@ Begin VB.Form frmLogicGates
    Begin VB.Image imgXOrGate 
       Height          =   1335
       Left            =   4800
+      Picture         =   "frmLogicGates.frx":0057
       Stretch         =   -1  'True
       Top             =   2040
       Width           =   1575
@@ -190,6 +191,7 @@ Begin VB.Form frmLogicGates
    Begin VB.Image imgXNorGate 
       Height          =   1335
       Left            =   4800
+      Picture         =   "frmLogicGates.frx":2F79
       Stretch         =   -1  'True
       Top             =   2040
       Width           =   1575
@@ -197,6 +199,7 @@ Begin VB.Form frmLogicGates
    Begin VB.Image imgOrGate 
       Height          =   1335
       Left            =   4800
+      Picture         =   "frmLogicGates.frx":5E9B
       Stretch         =   -1  'True
       Top             =   2040
       Width           =   1560
@@ -204,6 +207,7 @@ Begin VB.Form frmLogicGates
    Begin VB.Image imgNorGate 
       Height          =   1335
       Left            =   4800
+      Picture         =   "frmLogicGates.frx":8DBD
       Stretch         =   -1  'True
       Top             =   2040
       Width           =   1560
@@ -212,6 +216,7 @@ Begin VB.Form frmLogicGates
       Appearance      =   0  'Flat
       Height          =   1335
       Left            =   4800
+      Picture         =   "frmLogicGates.frx":BCDF
       Stretch         =   -1  'True
       Top             =   2040
       Width           =   1560
@@ -247,6 +252,7 @@ Begin VB.Form frmLogicGates
    Begin VB.Image imgAndGate 
       Height          =   1335
       Left            =   4800
+      Picture         =   "frmLogicGates.frx":EC01
       Stretch         =   -1  'True
       Top             =   2040
       Width           =   1560
@@ -354,27 +360,19 @@ Private Sub cmdCalculate_Click()
       If cmbGate.Text = "And Gate" Then
         If optTrueOne.Value = True And optTrueTwo.Value = True Then
             lblTrueFalse.Caption = "True"
-        ElseIf optTrueOne.Value = True And optFalseTwo.Value = True Then
-            lblTrueFalse.Caption = "False"
-        ElseIf optFalseOne.Value = True And optTrueTwo.Value = True Then
+        Else
             lblTrueFalse.Caption = "False"
         End If
     ElseIf cmbGate.Text = "Nand Gate" Then
         If optTrueOne.Value = True And optTrueTwo.Value = True Then
             lblTrueFalse.Caption = "False"
-        ElseIf optTrueOne.Value = True And optFalseTwo.Value = True Then
-            lblTrueFalse.Caption = "True"
         Else
             lblTrueFalse.Caption = "True"
         End If
     ElseIf cmbGate.Text = "Or Gate" Then
-        If optTrueOne.Value = True And optTrueTwo.Value = False Then
+        If optTrueOne.Value = True Or optTrueTwo.Value = True Then
             lblTrueFalse.Caption = "True"
-        ElseIf optTrueTwo.Value = True And optTrueOne.Value = False Then
-            lblTrueFalse.Caption = "True"
-        ElseIf optTrueOne.Value = True And optTrueTwo.Value = True Then
-            lblTrueFalse.Caption = "False"
-        ElseIf optTrueOne.Value = False And optTrueTwo.Value = False Then
+        Else
             lblTrueFalse.Caption = "False"
         End If
     ElseIf cmbGate.Text = "Nor Gate" Then
@@ -384,19 +382,21 @@ Private Sub cmdCalculate_Click()
             lblTrueFalse.Caption = "True"
         End If
     ElseIf cmbGate.Text = "XOr Gate" Then
-        If optTrueOne.Value = True And optTrueTwo.Value = False Then
+        If optTrueOne.Value = True And optTrueTwo.Value = True Then
+            lblTrueFalse.Caption = "False"
+        ElseIf optTrueOne.Value = True And optFalseTwo.Value = True Then
             lblTrueFalse.Caption = "True"
-        ElseIf optTrueOne.Value = False And optTrueTwo.Value = True Then
+        ElseIf optFalseOne.Value = True And optTrueTwo.Value = True Then
             lblTrueFalse.Caption = "True"
         ElseIf optFalseOne.Value = True And optFalseTwo.Value = True Then
             lblTrueFalse.Caption = "False"
-        Else
-            lblTrueFalse.Caption = "False"
         End If
     ElseIf cmbGate.Text = "XNor Gate" Then
-        If optTrueOne.Value = True And optTrueTwo.Value = False Then
+        If optTrueOne.Value = True And optTrueTwo.Value = True Then
+            lblTrueFalse.Caption = "True"
+        ElseIf optTrueOne.Value = True And optFalseTwo.Value = True Then
             lblTrueFalse.Caption = "False"
-        ElseIf optTrueOne.Value = False And optTrueTwo.Value = True Then
+        ElseIf optFalseOne.Value = True And optTrueTwo.Value = True Then
             lblTrueFalse.Caption = "False"
         ElseIf optFalseOne.Value = True And optFalseTwo.Value = True Then
             lblTrueFalse.Caption = "True"
