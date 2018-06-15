@@ -223,6 +223,20 @@ Private Sub cmdStartGuessingGame_Click()
     intMin = Val(txtMin.Text)
     intMax = Val(txtMax.Text)
     
+     'The min can't be higher than the max
+    If intMin > intMax Then
+       txtNumberGuess.Enabled = False
+       hsbNumberGuess.Enabled = False
+       lblWarning.Caption = "Your maximum value must be higher than your minimum value."
+       Exit Sub
+    Else
+        lblWarning.Caption = ""
+    End If
+    
+   'The max and min will be set to the user's chosen values
+    hsbNumberGuess.Min = intMin
+    hsbNumberGuess.Max = intMax
+    
     'The game is enabled when the user presses start
     txtNumberGuess.Enabled = True
     hsbNumberGuess.Enabled = True
@@ -235,17 +249,6 @@ Private Sub cmdStartGuessingGame_Click()
     lblHighLow.Caption = ""
     txtNumberGuess.Text = ""
     
-    'The min can't be higher than the max
-    If intMin > intMax Then
-       txtNumberGuess.Enabled = False
-       hsbNumberGuess.Enabled = False
-       lblWarning.Caption = "Your maximum value must be higher than your minimum value."
-    End If
-
-    'The max and min will be set to the user's chosen values
-    hsbNumberGuess.Min = intMin
-    hsbNumberGuess.Max = intMax
-
 End Sub
 
 Private Sub Form_Load()

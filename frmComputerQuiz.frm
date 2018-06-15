@@ -556,6 +556,9 @@ End Sub
 
 Private Sub cmdSubmit_Click()
     
+    'the score is reset regardless of what people do
+    score = 0
+    
     'Which answers are right and wrong will be determined for each of the questions
     'The score will be tallied
     If optTrueOne.Value = True Then

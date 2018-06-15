@@ -261,9 +261,13 @@ Private Sub cmdConvert_Click()
     intDecimal = Val(txtDecimal.Text)
     
     'Make sure the input is valid
-    If intDecimal < 0 Or intDecimal > 225 Or txtDecimal.Text = "" Then
+    If intDecimal < 0 Or intDecimal > 255 Or txtDecimal.Text = "" Then
         lblError.Caption = "Invalid Input"
         Exit Sub
+    Else
+        lblError.Caption = ""
+        txtBinary.Text = ""
+        txtHexadecimal.Text = ""
     End If
     
     'Converting decimal to binary
@@ -326,7 +330,7 @@ End Sub
 Private Sub cmdReturn_Click()
     
     'The user can return to the main form
-    Unload frmDecimalNuberConvirsion
+    Unload frmDecimalNumberConversion
     
 End Sub
 

@@ -7,6 +7,7 @@ Form=frmDecimalNumberConversion.frm
 Form=frmLogicGates.frm
 IconForm="frmMainForm"
 Startup="frmMainForm"
+ExeName32="Hannah_Cavanagh_Summative.exe"
 Command32=""
 Name="ProjectSummative"
 HelpContextID="0"
