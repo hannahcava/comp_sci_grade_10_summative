@@ -1,5 +1,6 @@
 VERSION 5.00
 Begin VB.Form frmDecimalNumberConversion 
+   BackColor       =   &H00FFC0C0&
    Caption         =   "Decimal Number Convirsion"
    ClientHeight    =   5475
    ClientLeft      =   120
@@ -95,6 +96,7 @@ Begin VB.Form frmDecimalNumberConversion
    End
    Begin VB.Label lblError 
       Alignment       =   2  'Center
+      BackColor       =   &H00FFC0C0&
       BeginProperty Font 
          Name            =   "MS Sans Serif"
          Size            =   9.75
@@ -111,6 +113,7 @@ Begin VB.Form frmDecimalNumberConversion
       Width           =   1455
    End
    Begin VB.Label lbl16 
+      BackColor       =   &H00FFC0C0&
       Caption         =   "16"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
@@ -128,6 +131,7 @@ Begin VB.Form frmDecimalNumberConversion
       Width           =   495
    End
    Begin VB.Label lblHexadecimal 
+      BackColor       =   &H00FFC0C0&
       Caption         =   "Hexadecimal Number:"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
@@ -145,6 +149,7 @@ Begin VB.Form frmDecimalNumberConversion
       Width           =   2415
    End
    Begin VB.Label lbl2 
+      BackColor       =   &H00FFC0C0&
       Caption         =   "2"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
@@ -162,6 +167,7 @@ Begin VB.Form frmDecimalNumberConversion
       Width           =   375
    End
    Begin VB.Label lblBinary 
+      BackColor       =   &H00FFC0C0&
       Caption         =   "Binary Number:"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
@@ -179,6 +185,7 @@ Begin VB.Form frmDecimalNumberConversion
       Width           =   2055
    End
    Begin VB.Label lbl10 
+      BackColor       =   &H00FFC0C0&
       Caption         =   "10"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
@@ -190,12 +197,13 @@ Begin VB.Form frmDecimalNumberConversion
          Strikethrough   =   0   'False
       EndProperty
       Height          =   255
-      Left            =   4680
+      Left            =   4560
       TabIndex        =   3
       Top             =   1440
       Width           =   375
    End
    Begin VB.Label lblDecimal 
+      BackColor       =   &H00FFC0C0&
       Caption         =   "Decimal Number:"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
@@ -214,6 +222,7 @@ Begin VB.Form frmDecimalNumberConversion
    End
    Begin VB.Label lblTitle 
       Alignment       =   2  'Center
+      BackColor       =   &H00FFC0C0&
       Caption         =   "Decimal Number Conversion"
       BeginProperty Font 
          Name            =   "MS Sans Serif"

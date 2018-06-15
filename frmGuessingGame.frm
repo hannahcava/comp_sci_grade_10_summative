@@ -1,5 +1,6 @@
 VERSION 5.00
 Begin VB.Form frmGuessingGame 
+   BackColor       =   &H00C0FFC0&
    Caption         =   "Guessing Game"
    ClientHeight    =   5955
    ClientLeft      =   120
@@ -101,6 +102,7 @@ Begin VB.Form frmGuessingGame
       Width           =   615
    End
    Begin VB.Label lblWarning 
+      BackColor       =   &H00C0FFC0&
       Height          =   735
       Left            =   3840
       TabIndex        =   11
@@ -109,6 +111,7 @@ Begin VB.Form frmGuessingGame
    End
    Begin VB.Label lblHighLow 
       Alignment       =   2  'Center
+      BackColor       =   &H00C0FFC0&
       BeginProperty Font 
          Name            =   "MS Sans Serif"
          Size            =   12
@@ -125,6 +128,7 @@ Begin VB.Form frmGuessingGame
       Width           =   1695
    End
    Begin VB.Label lblMax 
+      BackColor       =   &H00C0FFC0&
       Caption         =   "Max:"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
@@ -142,6 +146,7 @@ Begin VB.Form frmGuessingGame
       Width           =   495
    End
    Begin VB.Label lblMin 
+      BackColor       =   &H00C0FFC0&
       Caption         =   "Min:"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
@@ -159,6 +164,7 @@ Begin VB.Form frmGuessingGame
       Width           =   495
    End
    Begin VB.Label lblSetRange 
+      BackColor       =   &H00C0FFC0&
       Caption         =   "Set Range:"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
@@ -177,6 +183,7 @@ Begin VB.Form frmGuessingGame
    End
    Begin VB.Label lblGuessingGameTitle 
       Alignment       =   2  'Center
+      BackColor       =   &H00C0FFC0&
       Caption         =   "Guessing Game"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
@@ -212,6 +219,7 @@ End Sub
 
 Private Sub cmdStartGuessingGame_Click()
     
+    'The chosen max and min are converted to integers
     intMin = Val(txtMin.Text)
     intMax = Val(txtMax.Text)
     
@@ -255,6 +263,7 @@ End Sub
 
 Private Sub hsbNumberGuess_Change()
     
+    'If the user inputs thier guess into the text box, it is converted to an integer
     intGuess = Val(txtNumberGuess.Text)
     
     'The text box will change with the scroll bar input

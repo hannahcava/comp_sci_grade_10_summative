@@ -1,5 +1,6 @@
 VERSION 5.00
 Begin VB.Form frmMainForm 
+   BackColor       =   &H00FFFFFF&
    Caption         =   "Main Form"
    ClientHeight    =   4755
    ClientLeft      =   120
@@ -96,6 +97,7 @@ Begin VB.Form frmMainForm
    End
    Begin VB.Label lblMainSubtitle 
       Alignment       =   2  'Center
+      BackColor       =   &H00FFFFFF&
       Caption         =   "ICS2O Summative June 2018"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
@@ -114,6 +116,7 @@ Begin VB.Form frmMainForm
    End
    Begin VB.Label lblMainTitle 
       Alignment       =   2  'Center
+      BackColor       =   &H00FFFFFF&
       Caption         =   "Hannah Cavanagh"
       BeginProperty Font 
          Name            =   "MS Sans Serif"

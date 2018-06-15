@@ -1,5 +1,6 @@
 VERSION 5.00
 Begin VB.Form frmComputerQuiz 
+   BackColor       =   &H00C0FFFF&
    Caption         =   "Computer Quiz"
    ClientHeight    =   8490
    ClientLeft      =   120
@@ -11,12 +12,14 @@ Begin VB.Form frmComputerQuiz
    StartUpPosition =   3  'Windows Default
    Visible         =   0   'False
    Begin VB.Frame fraTFFive 
+      BackColor       =   &H00C0FFFF&
       Height          =   975
       Left            =   3840
       TabIndex        =   21
       Top             =   5640
       Width           =   1215
       Begin VB.OptionButton optFalseFive 
+         BackColor       =   &H00C0FFFF&
          Caption         =   "False"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
@@ -34,6 +37,7 @@ Begin VB.Form frmComputerQuiz
          Width           =   855
       End
       Begin VB.OptionButton optTrueFive 
+         BackColor       =   &H00C0FFFF&
          Caption         =   "True"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
@@ -52,12 +56,14 @@ Begin VB.Form frmComputerQuiz
       End
    End
    Begin VB.Frame fraTFFour 
+      BackColor       =   &H00C0FFFF&
       Height          =   975
       Left            =   3840
       TabIndex        =   17
       Top             =   4320
       Width           =   1215
       Begin VB.OptionButton optFalseFour 
+         BackColor       =   &H00C0FFFF&
          Caption         =   "False"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
@@ -75,6 +81,7 @@ Begin VB.Form frmComputerQuiz
          Width           =   855
       End
       Begin VB.OptionButton optTrueFour 
+         BackColor       =   &H00C0FFFF&
          Caption         =   "True"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
@@ -93,12 +100,14 @@ Begin VB.Form frmComputerQuiz
       End
    End
    Begin VB.Frame fraTFThree 
+      BackColor       =   &H00C0FFFF&
       Height          =   975
       Left            =   3840
       TabIndex        =   13
       Top             =   3240
       Width           =   1215
       Begin VB.OptionButton optFalseThree 
+         BackColor       =   &H00C0FFFF&
          Caption         =   "False"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
@@ -116,6 +125,7 @@ Begin VB.Form frmComputerQuiz
          Width           =   855
       End
       Begin VB.OptionButton optTrueThree 
+         BackColor       =   &H00C0FFFF&
          Caption         =   "True"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
@@ -134,6 +144,7 @@ Begin VB.Form frmComputerQuiz
       End
    End
    Begin VB.Frame fraTFTwo 
+      BackColor       =   &H00C0FFFF&
       Height          =   975
       Index           =   1
       Left            =   3840
@@ -141,6 +152,7 @@ Begin VB.Form frmComputerQuiz
       Top             =   2160
       Width           =   1215
       Begin VB.OptionButton optTrueTwo 
+         BackColor       =   &H00C0FFFF&
          Caption         =   "True"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
@@ -158,6 +170,7 @@ Begin VB.Form frmComputerQuiz
          Width           =   975
       End
       Begin VB.OptionButton optFalseTwo 
+         BackColor       =   &H00C0FFFF&
          Caption         =   "False"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
@@ -176,6 +189,7 @@ Begin VB.Form frmComputerQuiz
       End
    End
    Begin VB.Frame fraTFOne 
+      BackColor       =   &H00C0FFFF&
       Height          =   975
       Index           =   0
       Left            =   3840
@@ -183,6 +197,7 @@ Begin VB.Form frmComputerQuiz
       Top             =   1080
       Width           =   1215
       Begin VB.OptionButton optFalseOne 
+         BackColor       =   &H00C0FFFF&
          Caption         =   "False"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
@@ -200,6 +215,7 @@ Begin VB.Form frmComputerQuiz
          Width           =   975
       End
       Begin VB.OptionButton optTrueOne 
+         BackColor       =   &H00C0FFFF&
          Caption         =   "True"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
@@ -269,6 +285,7 @@ Begin VB.Form frmComputerQuiz
       Width           =   2055
    End
    Begin VB.Label lblScore 
+      BackColor       =   &H00C0FFFF&
       BeginProperty Font 
          Name            =   "MS Sans Serif"
          Size            =   9.75
@@ -365,6 +382,7 @@ Begin VB.Form frmComputerQuiz
       Width           =   1095
    End
    Begin VB.Label lblQuestionFive 
+      BackColor       =   &H00C0FFFF&
       Caption         =   "5. Bill Gates founded the company Apple."
       BeginProperty Font 
          Name            =   "MS Sans Serif"
@@ -383,6 +401,7 @@ Begin VB.Form frmComputerQuiz
       Width           =   2775
    End
    Begin VB.Label lblQuestionFour 
+      BackColor       =   &H00C0FFFF&
       Caption         =   "4. When a web page is sent over the internet, it is broken into packets so it can be sent more easily. "
       BeginProperty Font 
          Name            =   "MS Sans Serif"
@@ -401,6 +420,7 @@ Begin VB.Form frmComputerQuiz
       Width           =   2775
    End
    Begin VB.Label lblQuestionThree 
+      BackColor       =   &H00C0FFFF&
       Caption         =   "3. Ada Lovlace is recognized as the first  computer programmer."
       BeginProperty Font 
          Name            =   "MS Sans Serif"
@@ -419,6 +439,7 @@ Begin VB.Form frmComputerQuiz
       Width           =   2775
    End
    Begin VB.Label lblQuestionTwo 
+      BackColor       =   &H00C0FFFF&
       Caption         =   "2. The hexidecimal number system has six didgits."
       BeginProperty Font 
          Name            =   "MS Sans Serif"
@@ -437,6 +458,7 @@ Begin VB.Form frmComputerQuiz
       Width           =   2775
    End
    Begin VB.Label lblQuestionOne 
+      BackColor       =   &H00C0FFFF&
       Caption         =   "1. Transistors are often made of scillicon."
       BeginProperty Font 
          Name            =   "MS Sans Serif"
@@ -456,6 +478,7 @@ Begin VB.Form frmComputerQuiz
    End
    Begin VB.Label lblTitle 
       Alignment       =   2  'Center
+      BackColor       =   &H00C0FFFF&
       Caption         =   "Computer Quiz"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
@@ -489,14 +512,14 @@ Private Sub cmdClear_Click()
     optFalseOne.Value = False
     optTrueTwo.Value = False
     optFalseTwo.Value = False
-    optTrueThree.Va
+    optTrueThree.Value = False
     optFalseThree.Value = False
     optTrueFour.Value = False
     optFalseFour.Value = False
     optTrueFive.Value = False
     optFalseFive.Value = False
     
-    'The right andlue = False wrong pictures will dissapear
+    'The right and wrong pictures will dissapear
     imgCheckOne.Visible = False
     imgCheckTwo.Visible = False
     imgCheckThree.Visible = False
@@ -517,12 +540,14 @@ Private Sub cmdClear_Click()
 End Sub
 
 Private Sub cmdReturn_Click()
+    'The user can return to the main form
     Unload frmComputerQuiz
 End Sub
 
 Private Sub cmdSubmit_Click()
     
-    'Which answers are right and wrong will be determined and the score will be tallied
+    'Which answers are right and wrong will be determined for each of the questions
+    'The score will be tallied
     If optTrueOne.Value = True Then
         imgCheckOne.Visible = True
         score = score + 1
@@ -631,5 +656,33 @@ Private Sub cmdSubmit_Click()
 End Sub
 
 Private Sub Form_Load()
+    
+    'The score will be zero when the form loads
     score = 0
+    
+    'All option buttons will be deselected
+    optTrueOne.Value = False
+    optTrueOne.Value = False
+    optFalseOne.Value = False
+    optTrueTwo.Value = False
+    optFalseTwo.Value = False
+    optTrueThree.Value = False
+    optFalseThree.Value = False
+    optTrueFour.Value = False
+    optFalseFour.Value = False
+    optTrueFive.Value = False
+    optFalseFive.Value = False
+    
+    'The images will be invisible
+    imgCheckOne.Visible = False
+    imgCheckTwo.Visible = False
+    imgCheckThree.Visible = False
+    imgCheckFour.Visible = False
+    imgCheckFive.Visible = False
+    imgExOne.Visible = False
+    imgExTwo.Visible = False
+    imgExThree.Visible = False
+    ImgExFour.Visible = False
+    imgExFive.Visible = False
+    
 End Sub

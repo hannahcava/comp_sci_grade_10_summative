@@ -1,5 +1,6 @@
 VERSION 5.00
 Begin VB.Form frmLogicGates 
+   BackColor       =   &H00FFFFC0&
    Caption         =   "Logic Gates"
    ClientHeight    =   6195
    ClientLeft      =   120
@@ -62,6 +63,7 @@ Begin VB.Form frmLogicGates
       Width           =   1575
    End
    Begin VB.Frame fraInputTwo 
+      BackColor       =   &H00FFFFC0&
       Caption         =   "Input 2"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
@@ -78,6 +80,7 @@ Begin VB.Form frmLogicGates
       Top             =   3120
       Width           =   1695
       Begin VB.OptionButton optFalseTwo 
+         BackColor       =   &H00FFFFC0&
          Caption         =   "False"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
@@ -95,6 +98,7 @@ Begin VB.Form frmLogicGates
          Width           =   1095
       End
       Begin VB.OptionButton optTrueTwo 
+         BackColor       =   &H00FFFFC0&
          Caption         =   "True"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
@@ -113,6 +117,7 @@ Begin VB.Form frmLogicGates
       End
    End
    Begin VB.Frame fraInputOne 
+      BackColor       =   &H00FFFFC0&
       Caption         =   "Input 1"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
@@ -129,6 +134,7 @@ Begin VB.Form frmLogicGates
       Top             =   1320
       Width           =   1695
       Begin VB.OptionButton optFalseOne 
+         BackColor       =   &H00FFFFC0&
          Caption         =   "False"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
@@ -146,6 +152,7 @@ Begin VB.Form frmLogicGates
          Width           =   1215
       End
       Begin VB.OptionButton optTrueOne 
+         BackColor       =   &H00FFFFC0&
          Caption         =   "True"
          BeginProperty Font 
             Name            =   "MS Sans Serif"
@@ -165,6 +172,7 @@ Begin VB.Form frmLogicGates
    End
    Begin VB.Label lblTrueFalse 
       Alignment       =   2  'Center
+      BackColor       =   &H00FFFFC0&
       BeginProperty Font 
          Name            =   "MS Sans Serif"
          Size            =   16.5
@@ -273,10 +281,11 @@ Begin VB.Form frmLogicGates
    End
    Begin VB.Label lblLogicGatesTitle 
       Alignment       =   2  'Center
+      BackColor       =   &H00FFFFC0&
       Caption         =   "Logic Gates"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   13.5
+         Size            =   18
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -296,11 +305,10 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
-Dim gateTypes(6) As String
 
 Private Sub cmbGate_Click()
     
-    'The correct gate image will appear
+    'The correct gate image will appear when selected
     If cmbGate.Text = "And Gate" Then
         imgAndGate.Visible = True
         imgNandGate.Visible = False
@@ -356,7 +364,8 @@ End Sub
 
 Private Sub cmdCalculate_Click()
     
-      'The output will be calculated
+      'Depending on which gate is selected, the output is calculated by a given set of rules
+      'This happens when the Calculate button is clicked
       If cmbGate.Text = "And Gate" Then
         If optTrueOne.Value = True And optTrueTwo.Value = True Then
             lblTrueFalse.Caption = "True"
@@ -417,6 +426,7 @@ Private Sub Form_Load()
     imgXOrGate.Visible = False
     imgXNorGate.Visible = False
     
+    'All options are deselected when the form loads
     optTrueOne.Value = False
     optFalseOne.Value = False
     optTrueTwo.Value = False
