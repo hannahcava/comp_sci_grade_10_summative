@@ -22,7 +22,7 @@ Begin VB.Form frmLogicGates
       EndProperty
       Height          =   495
       Left            =   4680
-      TabIndex        =   13
+      TabIndex        =   10
       Top             =   4200
       Width           =   1815
    End
@@ -39,7 +39,7 @@ Begin VB.Form frmLogicGates
       EndProperty
       Height          =   615
       Left            =   480
-      TabIndex        =   12
+      TabIndex        =   9
       Top             =   5160
       Width           =   2175
    End
@@ -57,7 +57,7 @@ Begin VB.Form frmLogicGates
       ItemData        =   "frmLogicGates.frx":0000
       Left            =   4800
       List            =   "frmLogicGates.frx":0016
-      TabIndex        =   11
+      TabIndex        =   8
       Top             =   3360
       Width           =   1575
    End
@@ -74,7 +74,7 @@ Begin VB.Form frmLogicGates
       EndProperty
       Height          =   1335
       Left            =   480
-      TabIndex        =   7
+      TabIndex        =   4
       Top             =   3120
       Width           =   1695
       Begin VB.OptionButton optFalseTwo 
@@ -90,7 +90,7 @@ Begin VB.Form frmLogicGates
          EndProperty
          Height          =   255
          Left            =   240
-         TabIndex        =   9
+         TabIndex        =   6
          Top             =   840
          Width           =   1095
       End
@@ -107,7 +107,7 @@ Begin VB.Form frmLogicGates
          EndProperty
          Height          =   255
          Left            =   240
-         TabIndex        =   8
+         TabIndex        =   5
          Top             =   360
          Width           =   1215
       End
@@ -128,57 +128,6 @@ Begin VB.Form frmLogicGates
       TabIndex        =   1
       Top             =   1320
       Width           =   1695
-      Begin VB.Frame Frame1 
-         Caption         =   "Input 1"
-         BeginProperty Font 
-            Name            =   "MS Sans Serif"
-            Size            =   12
-            Charset         =   0
-            Weight          =   400
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   1335
-         Left            =   0
-         TabIndex        =   4
-         Top             =   0
-         Width           =   1695
-         Begin VB.OptionButton Option2 
-            Caption         =   "True"
-            BeginProperty Font 
-               Name            =   "MS Sans Serif"
-               Size            =   9.75
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            Height          =   255
-            Left            =   240
-            TabIndex        =   6
-            Top             =   360
-            Width           =   1095
-         End
-         Begin VB.OptionButton Option1 
-            Caption         =   "False"
-            BeginProperty Font 
-               Name            =   "MS Sans Serif"
-               Size            =   9.75
-               Charset         =   0
-               Weight          =   400
-               Underline       =   0   'False
-               Italic          =   0   'False
-               Strikethrough   =   0   'False
-            EndProperty
-            Height          =   255
-            Left            =   240
-            TabIndex        =   5
-            Top             =   840
-            Width           =   1215
-         End
-      End
       Begin VB.OptionButton optFalseOne 
          Caption         =   "False"
          BeginProperty Font 
@@ -227,7 +176,7 @@ Begin VB.Form frmLogicGates
       EndProperty
       Height          =   495
       Left            =   6480
-      TabIndex        =   10
+      TabIndex        =   7
       Top             =   2520
       Width           =   1215
    End
@@ -341,6 +290,7 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Explicit
+Dim gateTypes(6) As String
 
 Private Sub cmbGate_Click()
     
@@ -466,6 +416,11 @@ Private Sub Form_Load()
     imgNorGate.Visible = False
     imgXOrGate.Visible = False
     imgXNorGate.Visible = False
+    
+    optTrueOne.Value = False
+    optFalseOne.Value = False
+    optTrueTwo.Value = False
+    optFalseTwo.Value = False
     
 End Sub
 
