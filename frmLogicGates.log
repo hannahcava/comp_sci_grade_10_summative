@@ -1,0 +1,8 @@
+Line 57: Property ItemData in cmbGate had an invalid file reference.
+Line 59: Property List in cmbGate had an invalid file reference.
+Line 237: Property Picture in imgXOrGate had an invalid file reference.
+Line 245: Property Picture in imgXNorGate had an invalid file reference.
+Line 253: Property Picture in imgOrGate had an invalid file reference.
+Line 261: Property Picture in imgNorGate had an invalid file reference.
+Line 270: Property Picture in imgNandGate had an invalid file reference.
+Line 306: Property Picture in imgAndGate had an invalid file reference.

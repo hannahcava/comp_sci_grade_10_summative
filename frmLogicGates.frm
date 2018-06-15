@@ -218,7 +218,7 @@ Begin VB.Form frmLogicGates
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   17.25
+         Size            =   16.5
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -234,7 +234,6 @@ Begin VB.Form frmLogicGates
    Begin VB.Image imgXOrGate 
       Height          =   1335
       Left            =   4800
-      Picture         =   "frmLogicGates.frx":0057
       Stretch         =   -1  'True
       Top             =   2040
       Width           =   1575
@@ -242,7 +241,6 @@ Begin VB.Form frmLogicGates
    Begin VB.Image imgXNorGate 
       Height          =   1335
       Left            =   4800
-      Picture         =   "frmLogicGates.frx":2F79
       Stretch         =   -1  'True
       Top             =   2040
       Width           =   1575
@@ -250,7 +248,6 @@ Begin VB.Form frmLogicGates
    Begin VB.Image imgOrGate 
       Height          =   1335
       Left            =   4800
-      Picture         =   "frmLogicGates.frx":5E9B
       Stretch         =   -1  'True
       Top             =   2040
       Width           =   1560
@@ -258,7 +255,6 @@ Begin VB.Form frmLogicGates
    Begin VB.Image imgNorGate 
       Height          =   1335
       Left            =   4800
-      Picture         =   "frmLogicGates.frx":8DBD
       Stretch         =   -1  'True
       Top             =   2040
       Width           =   1560
@@ -267,7 +263,6 @@ Begin VB.Form frmLogicGates
       Appearance      =   0  'Flat
       Height          =   1335
       Left            =   4800
-      Picture         =   "frmLogicGates.frx":BCDF
       Stretch         =   -1  'True
       Top             =   2040
       Width           =   1560
@@ -303,7 +298,6 @@ Begin VB.Form frmLogicGates
    Begin VB.Image imgAndGate 
       Height          =   1335
       Left            =   4800
-      Picture         =   "frmLogicGates.frx":EC01
       Stretch         =   -1  'True
       Top             =   2040
       Width           =   1560
@@ -327,7 +321,7 @@ Begin VB.Form frmLogicGates
       Caption         =   "Logic Gates"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   15
+         Size            =   13.5
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False

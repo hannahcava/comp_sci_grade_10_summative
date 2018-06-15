@@ -9,6 +9,23 @@ Begin VB.Form frmMainForm
    ScaleHeight     =   4755
    ScaleWidth      =   5895
    StartUpPosition =   3  'Windows Default
+   Begin VB.CommandButton cmdLogicGates 
+      Caption         =   "Logic Gates"
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   12
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   735
+      Left            =   3720
+      TabIndex        =   6
+      Top             =   2160
+      Width           =   1935
+   End
    Begin VB.CommandButton cmdBinaryHexadecimal 
       Caption         =   "Decimal Number Conversion"
       BeginProperty Font 
@@ -140,3 +157,7 @@ Private Sub cmdGuessingGame_Click()
     frmGuessingGame.Show vbModal
 End Sub
 
+Private Sub cmdLogicGates_Click()
+    'The logic gates are loaded
+    frmLogicGates.Show vbModal
+End Sub
